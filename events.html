@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JS - Events</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body onload='alertFun()'>
+        <p onmouseover='changecolor()' id='text'>Some text</p>
+        <script type="text/javascript">
+            function changecolor(){
+                
+                var txt = document.getElementById('text');
+                txt.style.color = "red";
+            }
+            function alertFun(){
+                alert('page loaded');
+            }
+        </script>
+    </body>
+</html>
